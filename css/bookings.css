@@ -1,0 +1,44 @@
+/* This is bookinhgs.css - The CSS File for 'bookings.html' */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+thead{
+    background-color: #16a085;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.data:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2{
+    font-weight: bold;
+}
+
+a{
+    font-weight: bold;
+}
+
+.fa-eye{
+    color: orange;
+}

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- This is the Head Section -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marriage Hall Booking System</title>
+
+        <!-- Link to the CSS File -->
+        <link rel="stylesheet" href="/css/index.css">
+        
+        <!-- Jquery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+                
+        <!-- Link to the Font-Awesome Icons -->        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Link to the 'index.css' file -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <!-- This is the Body Section -->
+    <body>
+
+        <!-- Navbar -->
+        <nav class="nav">
+            <a class="nav-a" href="#">Marriage Hall Management System</a>
+            <div class="header">
+                <a class="nav-a" href="#"><i class="fas fa-home"></i> Home</i></a>
+                <a class="nav-b" href="add.html"><i class="fas fa-user-edit"></i> New Booking</a>
+                <a class="nav-b" href="bookings.html"><i class="fas fa-eye"></i> View Bookings</a>
+            </div>
+        </nav>
+        
+        <!-- All Halls Section -->
+        <h2 class="main-title">All Halls</h2>
+        <hr>
+        
+        <section class="main">
+            <div class="hall">
+                <div class="hall-name"><img src="images/hall-1.jpeg" alt=""></div>
+                <div class="view"><h3>Banquet Hall</h3> <br> <button id="open1" class="btn">View More</button></div>
+            </div>
+
+            <div class="hall">
+                <div class="hall-name"><img src="images/hall-2.jpg" alt=""></div>
+                <div class="view"><h3>Vivette Banquet</h3> <br> <button id="open2" class="btn">View More</button></div>
+            </div>
+
+            <div class="hall">
+                <div class="hall-name"><img src="images/hall-3.jpg" alt=""></div>
+                <div class="view"><h3>Ruia Hall</h3> <br> <button id="open3" class="btn">View More</button></div>
+            </div>
+
+            <div class="hall">
+                <div class="hall-name"><img src="images/hall-4.jpg" alt=""></div>
+                <div class="view"><h3>Lakhani Banquets</h3> <br> <button id="open4" class="btn">View More</button></div>
+            </div>
+
+            <div class="hall">
+                <div class="hall-name"><img src="images/hall-5.jpg" alt=""></div>
+                <div class="view"><h3>Silver Oaks Banquets</h3> <br> <button id="open5" class="btn">View More</button></div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="abt">
+            <h1 class="title">About Us</h1>
+            <div class="about">
+                <div class="left">           
+                    <img src="images/about us.jpg" alt="">         
+                </div>
+                <div class="right">
+                    <p class="main-info">
+                       Marriage Hall Management System is a one stop application for the users which let the users to compare different halls as per their requirements by providing all the information related to that hall such as hall name, hall capacity, hall area, hall cost, providing services by the corresponding hall and their ratings too. Upon deciding about a particular hall, the user can simply book the hall by providing few details and then his/her booking is done.
+                       <br>
+                       <b>Explore it further !!!</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section>
+            <div class="footer">
+                <h4>Copyright &copy; ESD Solutions 2021</h4>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div class="modal_container1" id="modal_container1">
+            <div class="modal">
+                <h3>Banquet Hall</h3>
+                <table id="example" class="table hall-1">
+                    <thead>
+                        <td class="attr">Hall Attributes</td>
+                        <td class="attr">Hall Details</td>
+                    </thead>
+
+                    <tbody>
+                        <tr class="data">
+                            <td class="attr">Hall Name</td>
+                            <td>Banquet Halls</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Contact</td>
+                            <td>+91-2249415170</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Booking Cost</td>
+                            <td>20000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Food Cost (per plate)</td>
+                            <td>700</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Total Cost</td>
+                            <td>370000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Capacity</td>
+                            <td>500</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Area (in sqft)</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Address</td>
+                            <td>Golden Leaf Banquet, Thakkar Stardom Events Pvt. Ltd, Link House Building, 5th Floor, Link Road, Mumbai, Maharashtra-400064</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Services</td>
+                            <td>Serves both veg and non-veg food, Located only 10 minutes away from Malad Railway Station, In-house decor and catering services provided, Parking space and changing rooms available</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Rating</td>
+                            <td>4.4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons">
+                    <button id="close1" class="btn btns">Close</button>
+                    <button class="btn btns"><a href="add.html">Book</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal_container2" id="modal_container2">
+            <div class="modal">
+                <h3>Vivette Banquet</h3>
+                <table id="example" class="table hall-1">
+                    <thead>
+                        <td class="attr">Hall Attributes</td>
+                        <td class="attr">Hall Details</td>
+                    </thead>
+
+                    <tbody>
+                        <tr class="data">
+                            <td class="attr">Hall Name</td>
+                            <td>Vivette Banquet</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Contact</td>
+                            <td>+91-2249415170</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Booking Cost</td>
+                            <td>18000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Food Cost (per plate)</td>
+                            <td>600</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Total Cost</td>
+                            <td>318000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Capacity</td>
+                            <td>500</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Area (in sqft)</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Address</td>
+                            <td>Vivette Banquet, Chincholi Bunder Rd, next to Grand Hometel, Malad, Ram Nagar, Malad West, Mumbai, Maharashtra 400064</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Services</td>
+                            <td>Changing rooms provided, Located about 15 minutes away from Malad Railway Station, In-house decor and catering services provided, Ample parking space with valet service</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Rating</td>
+                            <td>4.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons">
+                    <button id="close2" class="btn btns">Close</button>
+                    <button class="btn btns"><a href="add.html">Book</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal_container3" id="modal_container3">
+            <div class="modal">
+                <h3>Ruia Hall</h3>
+                <table id="example" class="table hall-1">
+                    <thead>
+                        <td class="attr">Hall Attributes</td>
+                        <td class="attr">Hall Details</td>
+                    </thead>
+
+                    <tbody>
+                        <tr class="data">
+                            <td class="attr">Hall Name</td>
+                            <td>Ruia Hall</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Contact</td>
+                            <td>+91-224951286</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Booking Cost</td>
+                            <td>16000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Food Cost (per plate)</td>
+                            <td>550</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Total Cost</td>
+                            <td>291000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Capacity</td>
+                            <td>500</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Area (in sqft)</td>
+                            <td>800</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Address</td>
+                            <td>Ruia Hall, Anand Rd, Vijaykar Wadi, Malad West, Mumbai, Maharashtra 400064</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Services</td>
+                            <td>350 meters away from Malad Railway Station, Convenient location, Open decoration</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Rating</td>
+                            <td>4.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons">
+                    <button id="close3" class="btn btns">Close</button>
+                    <button class="btn btns"><a href="add.html">Book</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal_container4" id="modal_container4">
+            <div class="modal">
+                <h3>Lakhani Banquets</h3>
+                <table id="example" class="table hall-1">
+                    <thead>
+                        <td class="attr">Hall Attributes</td>
+                        <td class="attr">Hall Details</td>
+                    </thead>
+
+                    <tbody>
+                        <tr class="data">
+                            <td class="attr">Hall Name</td>
+                            <td>Lakhani Banquets</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Contact</td>
+                            <td>+91-2249415311</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Booking Cost</td>
+                            <td>22000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Food Cost (per plate)</td>
+                            <td>750</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Total Cost</td>
+                            <td>922000</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Capacity</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Area (in sqft)</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Address</td>
+                            <td>Lakhani Banquets, Quantam Tower Ram Bagh Lane, Chincholi Phatak Signal, SV Rd, Malad West, Mumbai, Maharashtra 400064</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Services</td>
+                            <td>Great staff, In-house decorators and caterers take care of everything, Colossal banquet hall with inviting ambience, Valet parking with ample space"</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Rating</td>
+                            <td>4.9</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons">
+                    <button id="close4" class="btn btns">Close</button>
+                    <button class="btn btns"><a href="add.html">Book</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal_container5" id="modal_container5">
+            <div class="modal">
+                <h3>Silver Oaks Banquets</h3>
+                <table id="example" class="table hall-1">
+                    <thead>
+                        <td class="attr">Hall Attributes</td>
+                        <td class="attr">Hall Details</td>
+                    </thead>
+
+                    <tbody>
+                        <tr class="data">
+                            <td class="attr">Hall Name</td>
+                            <td>Silver Oaks Banquets</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Contact</td>
+                            <td>+91-2249450257</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Booking Cost</td>
+                            <td>17500</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Food Cost (per plate)</td>
+                            <td>650</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Total Cost</td>
+                            <td>537500</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Capacity</td>
+                            <td>800</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Area (in sqft)</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Address</td>
+                            <td>Silver Oaks Banquets, B2B, Agarwal Centre, D'monte Lane, Next to Malad Industrial Estate, Kachpada, Malad West, Mumbai, Maharashtra 400064</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Services</td>
+                            <td>Great and humble staff, 2.3 kilometers away from Malad Railway Station, Food and decor are provided, Allows alcohol consumption</td>
+                        </tr>
+                        <tr class="data">
+                            <td class="attr">Hall Rating</td>
+                            <td>4.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="buttons">
+                    <button id="close5" class="btn btns">Close</button>
+                    <button class="btn btns"><a href="add.html">Book</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS Script for Modal -->
+        <script>
+            const open1 = document.getElementById('open1');
+            const close1 = document.getElementById('close1');
+            const modal_container1 = document.getElementById('modal_container1');
+
+            const open2 = document.getElementById('open2');
+            const close2 = document.getElementById('close2');
+            const modal_container2 = document.getElementById('modal_container2');
+
+            const open3 = document.getElementById('open3');
+            const close3 = document.getElementById('close3');
+            const modal_container3 = document.getElementById('modal_container3');
+
+            const open4 = document.getElementById('open4');
+            const close4 = document.getElementById('close4');
+            const modal_container4 = document.getElementById('modal_container4');
+
+            const open5 = document.getElementById('open5');
+            const close5 = document.getElementById('close5');
+            const modal_container5 = document.getElementById('modal_container5');
+
+            open1.addEventListener("click", () => {
+                modal_container1.classList.add("show");
+            })
+
+            close1.addEventListener("click", () => {
+                modal_container1.classList.remove("show");
+            })
+
+            open2.addEventListener("click", () => {
+                modal_container2.classList.add("show");
+            })
+
+            close2.addEventListener("click", () => {
+                modal_container2.classList.remove("show");
+            })
+
+            open3.addEventListener("click", () => {
+                modal_container3.classList.add("show");
+            })
+
+            close3.addEventListener("click", () => {
+                modal_container3.classList.remove("show");
+            })
+
+            open4.addEventListener("click", () => {
+                modal_container4.classList.add("show");
+            })
+
+            close4.addEventListener("click", () => {
+                modal_container4.classList.remove("show");
+            })
+
+            open5.addEventListener("click", () => {
+                modal_container5.classList.add("show");
+            })
+
+            close5.addEventListener("click", () => {
+                modal_container5.classList.remove("show");
+            })
+        </script>
+
+    </body>
+</html>

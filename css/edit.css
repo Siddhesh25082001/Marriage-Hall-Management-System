@@ -1,0 +1,36 @@
+/* This is edit.css - The CSS File for 'edit.html' */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    font-weight: bold;
+    margin: 5px auto;
+}
+
+a{
+    font-weight: bold;
+}
+
+form{
+    border: 2px solid black;
+    padding: 20px 25px;
+    border-radius: 15px;
+    width: 60%;
+    margin: 10px auto;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.65);
+}
+
+label{
+    font-weight: 600;
+}
+
+.fa-edit{
+    color: orange;
+}

@@ -1,0 +1,285 @@
+/* This is index.css - The CSS File for 'index.html' */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.main{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hall{
+    width: 25%;
+    margin: 30px 30px;
+    height: 300px;
+    cursor: pointer;
+    transition: all 0.5ms ease-in-out;
+    text-align: center;
+    align-self: center;
+    border-bottom-right-radius: 50px;
+}
+
+.hall:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.hall-name{
+    position: relative;
+    height: 75%;
+    background-image: url(../images/hall-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hall .view{
+    position: relative;
+    text-align: center;
+    height: 25%;
+    padding: 15px 0;
+    border-bottom-right-radius: 50px;
+    background: rgb(248, 197, 103);
+}
+
+img{
+    position: relative;
+    height: 225px;
+    width: 100%;
+}
+
+.btn{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal_container1, .modal_container2, .modal_container3, .modal_container4, .modal_container5{
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal_container1.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal_container2.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal_container3.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal_container4.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal_container5.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    width: 80%;
+    max-width: 100%;
+}
+
+.modal h3{
+    text-align: center;
+    margin: 3px 0;
+    letter-spacing: 3px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #16a085;
+    color: #fff;
+    font-size: 18px;
+    height: 25px;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+tbody{
+    background-color: #f5f5f5;
+}
+
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    height: 25px;
+}
+
+.data:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+td{
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.data .attr{
+    width: 30%;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns{
+    margin: 10px 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgb(222, 239, 245);
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-a{
+    color: #111;
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.nav-b{
+    color: #111;
+    opacity: 0.7;
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.abt{
+    margin: 30px auto;
+    padding: 30px 40px;
+    background-image: url(../images/about.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.left{
+    width: 39%;
+}
+
+.left img{
+    margin: auto 0;
+}
+
+.right p{
+    text-align: justify;
+    padding: 2px 0;
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+.right{
+    width: 69%;
+    margin: 30px 25px;
+}
+
+.title{
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.footer{
+    text-align: center;
+    padding: 8px 15px;
+    background-color: lightcyan;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+hr{
+    width: 40%;
+    margin: 2px auto;
+    border-top: 0;
+    border-bottom: 4px solid crimson;
+    border-style: dashed;
+}
+
+.fa-home{
+    color: orange;
+}
